@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div>
+      <div class="calc-frame">
+        <div class="calc-output">
+          <textarea name="" id="input" readonly placeholder=""></textarea>
+          <textarea name="" id="output" readonly placeholder="result"></textarea>
+        </div>
+        <div class="calc-row-s">
+          <div class="calc-row">
+            <button onclick="clearInput()" type="button" class="clr">Clr</button>
+            <button onclick="addToInput('/')" type="button" class="control">/</button>
+            <button onclick="addToInput('*')" type="button" class="control">x</button>
+            <button onclick="deleteInput()" type="button" class="clr">Del</button>
+          </div>
+          <div class="calc-row">
+            <button onclick="addToInput('7')" type="button">7</button>
+            <button onclick="addToInput('8')" type="button">8</button>
+            <button onclick="addToInput('9')" type="button">9</button>
+            <button onclick="addToInput('-')" type="button" class="control">-</button>
+          </div>
+          <div class="calc-row">
+            <button onclick="addToInput('4')" type="button">4</button>
+            <button onclick="addToInput('5')" type="button">5</button>
+            <button onclick="addToInput('6')" type="button">6</button>
+            <button onclick="addToInput('+')" type="button" class="control">+</button>
+          </div>
+          <div class="calc-row">
+            <button onclick="addToInput('1')" type="button">1</button>
+            <button onclick="addToInput('2')" type="button">2</button>
+            <button onclick="addToInput('3')" type="button">3</button>
+            <button onclick="addToInput('.')" type="button">.</button>
+          </div>
+          <div class="calc-row">
+            <button onclick="addToInput('0')" type="button">0</button>
+            <button onclick="addToInput('(')" type="button" >(</button>
+            <button onclick="addToInput(')')" type="button">)</button>
+            <button onclick="calculateOutput()" type="button" class="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
